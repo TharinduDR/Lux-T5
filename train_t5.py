@@ -9,7 +9,7 @@ input_sentence_size = None
 
 dataset = load_dataset("oscar-corpus/OSCAR-2201",
                        use_auth_token=True,  # required
-                       name="si",
+                       name="lb",
                        split="train")  # optional, but the dataset only has a train split
 
 tokenizer = SentencePieceUnigramTokenizer(unk_token="<unk>", eos_token="</s>", pad_token="<pad>")
