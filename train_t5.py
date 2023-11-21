@@ -32,9 +32,9 @@ tokenizer.train_from_iterator(
 )
 
 # Save files to disk
-tokenizer.save("sinhala-t5-base/tokenizer.json")
+tokenizer.save("lux-t5-base/tokenizer.json")
 config = T5Config.from_pretrained("google/t5-v1_1-base", vocab_size=tokenizer.get_vocab_size())
-config.save_pretrained("sinhala-t5-base")
+config.save_pretrained("lux-t5-base")
 
 
 
